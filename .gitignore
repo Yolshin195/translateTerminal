@@ -1,3 +1,4 @@
 /bash
 /node_modules
+/src/conf.js
 package-lock.json
