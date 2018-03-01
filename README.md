@@ -17,26 +17,27 @@
   node index -ru|en text text ... 
 ```
 1. в linux для удобства создайте два файла ru и en 
-с содержимым: 
-ru
+с содержимым:  
+
+ru:  
 ```
 #!/bin/bash
 echo `node ~/pathFolder/index.js -ru $*`
 ```
-en
+
+en:  
 ```
 #!/bin/bash
 echo `node ~/pathFolder/index.js -en $*`
 ```
-далее выполнить
+далее выполнитe для доступа к программе из консоли
 ```
 chmod +x ru
-xhmod +x en
+chmod +x en
 
 ln ru /usr/local/bin
 ln en /usr/local/bin
 ```
-для доступа к программе из консоли 
 
 теперь для перевода используйте команды
 ```
